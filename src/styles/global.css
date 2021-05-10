@@ -1,0 +1,41 @@
+:root{
+  --hard-black:#050505;
+  --hard-red:#FF3434;
+  --hard-grey: #111111;
+  --light-grey:#AABBBB;
+}
+body{
+  background-color: var(--hard-black);
+  color: white;
+}
+nav{
+  background-color: var(--hard-black);
+}
+nav .navbar_logo{
+  width: 60px;
+  height: 40px;
+}
+p{
+  color: var(--light-grey);
+}
+#featured{
+  background-image: url(/featured.jpg);
+  background-position: center;
+  background-size:cover;
+  height: 70vh;
+}
+#chart{
+  /* background-image: url(/hive.jpg); */
+  background-position: center;
+}
+.featured_half_section{
+  max-width: 80%;
+}
+.bigIcon{
+  width: 80px;
+  height: 80px;
+}
+.btn-primary{
+  background-color: var(--hard-red) !important;
+  border: none;
+}

@@ -15,10 +15,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.0",
+    "chart.js": "^3.2.1",
     "gatsby": "^3.4.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
+    "react-chartjs-2": "^3.0.3",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
