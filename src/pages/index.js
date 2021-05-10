@@ -1,5 +1,8 @@
-import React from "react"
+import React from "react";
+import Section from "../components/section";
+
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return <div>
+  </div>
 }
