@@ -4,11 +4,6 @@ emailjs.init('user_o1JLUuc75Y9FwtRUQK2Hh');
 
 export default function Form(){
 
-  const SERVICE_ID = 'service_ecn9ldj';
-  const TEMPLATE_ID = 'template_70zhpp3';
-  const FORM = document.getElementById('contactForm');
-  console.log(FORM);
-
   function handleReset(){
     Array.from(document.getElementsByClassName('form-control')).forEach(
       input => (input.value = "")
