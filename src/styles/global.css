@@ -1,6 +1,7 @@
 :root{
   --hard-black:#050505;
   --hard-red:#FF3434;
+  --light-red:#ff4d4d;
   --hard-grey: #111111;
   --light-grey:#AABBBB;
 }
@@ -18,8 +19,15 @@ nav .navbar_logo{
 p{
   color: var(--light-grey);
 }
+input,
+textarea,
+.input-group-text{
+  background-color: var(--hard-grey) !important;
+  color: white !important;
+  border: none !important;
+}
 #featured{
-  background-image: url(/featured.jpg);
+  background-image: url('/featured.jpg');
   background-position: center;
   background-size:cover;
   height: 70vh;
@@ -28,8 +36,20 @@ p{
   /* background-image: url(/hive.jpg); */
   background-position: center;
 }
-.featured_half_section{
+#band{
+  background-color: var(--hard-red);
+}
+#band i{
+  background-color: var(--light-red);
+  color: white;
+  border: none;
+  font-size: 4rem;
+}
+.featured_audi{
   max-width: 80%;
+}
+.featured_engine{
+  max-width: 60%;
 }
 .bigIcon{
   width: 80px;

@@ -7,7 +7,7 @@ export default function ChartLine(){
     datasets: [
       {
         label: 'Test',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [1, 3, 7, 1, 2, 10],
         fill: false,
         backgroundColor: '#FF3434',
         borderColor: '#FF3434',
