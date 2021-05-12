@@ -16,7 +16,7 @@ export default function Home() {
       <div className="py-5">
         <div className="text-center">
           <h1>Lorem Ipsum Stale</h1>
-          <button type="button" className="btn btn-lg btn-primary">Contact</button>
+          <button type="button" className="btn btn-lg btn-red">Contact</button>
         </div>
       </div>
     </Section>
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="row">
           <div className="col text-center">
             <div className="mb-4">
-              <img src="/puce.png" className="bigIcon" />
+              <i className="las la-fire icon-medium font-red"></i>
             </div>
             <h4 className="mb-5">jsdhf sjdhf</h4>
             <p className="">
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className="col text-center">
             <div className="mb-4">
-              <img src="/puce.png" className="bigIcon" />
+              <i className="las la-fire icon-medium font-red"></i>
             </div>
             <h4 className="mb-5">jsdhf sjdhf</h4>
             <p className="">
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="col text-center">
             <div className="mb-4">
-              <img src="/puce.png" className="bigIcon" />
+              <i className="las la-fire icon-medium font-red"></i>
             </div>
             <h4 className="mb-5">jsdhf sjdhf</h4>
             <p className="">
@@ -88,16 +88,16 @@ export default function Home() {
 
     <Section id="band">
       <div className="container py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col">
+        <div className="container">
+          <div className="row">
+            <div className="col">
               <div className="row">
                 <div className="col-3">
                   <div className="">
-                    <i class="las la-fire rounded-circle"></i>
+                    <i className="las la-fire icon-medium icon-medium-rounded"></i>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-9 d-flex flex-column justify-content-center">
                   <span className="">sdfgdfghdfgdfgdfg</span>
                   <p className="">
                     sdfsdfsdfsdfsdfsf
@@ -105,14 +105,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div className="col">
               <div className="row">
                 <div className="col-3">
                   <div className="">
-                    <i class="las la-lemon rounded-circle"></i>
+                    <i className="las la-lemon icon-medium icon-medium-rounded"></i>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-9 d-flex flex-column justify-content-center">
                   <span className="">sdfgdfghdfgdfgdfg</span>
                   <p className="">
                     sdfsdfsdfsdfsdfsf
@@ -120,14 +120,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div className="col">
               <div className="row">
                 <div className="col-3">
                   <div className="">
-                    <i class="las la-rocket rounded-circle"></i>
+                    <i className="las la-rocket icon-medium icon-medium-rounded"></i>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-9 d-flex flex-column justify-content-center">
                   <span className="">sdfgdfghdfgdfgdfg</span>
                   <p className="">
                     sdfsdfsdfsdfsdfsf
@@ -144,14 +144,14 @@ export default function Home() {
       <div className="container py-5">
         <div className="row">
           <div className="col">
-            <div className="card shadow bg-transparent">
+            <div className="card shadow bg-grey">
               <div className="card-body">
                 <img src={Map} alt="lieux d'implantation" />
               </div>
             </div>
           </div>
           <div className="col">
-            <h3>dsfdg ghgh fhfhjhj </h3>
+            <h3>Usfdg ghgh fhfhjhj </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               In ullamcorper lorem ante, et tempus orci imperdiet vel.
@@ -211,69 +211,79 @@ export default function Home() {
         <div className="row">
 
           <div className="col">
-            <h3>dsfdg ghgh fhfhjhj </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              In ullamcorper lorem ante, et tempus orci imperdiet vel.
-            </p>
-            <img className="featured_audi" src="/audi.png" alt="" />
+            <div className="card bg-transparent">
+              <div className="card-body">
+                <h3>Dsfdg ghgh fhfhjhj </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  In ullamcorper lorem ante, et tempus orci imperdiet vel.
+                </p>
+                <img className="featured_audi" src="/audi.png" alt="" />
+              </div>
+            </div>
           </div>
 
           <div className="col">
             <div className="row mb-3">
               <div className="col">
-                <div className="card bg-transparent">
-                  <div className="d-inline-block mb-3">
-                    <img src="/puce.png" className="bigIcon" />
-                    <span className="fs-5"> Lorem Ipsum ad</span>
+                <div className="card">
+                  <div className="card-body">
+                    <div className="d-inline-block d-flex flex-row align-items-center mb-3">
+                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <h4 className="fs-5"> Lorem Ipsum ad</h4>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In ullamcorper lorem ante, et tempus orci imperdiet vel.
+                    </p>
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                  </p>
                 </div>
               </div>
               <div className="col">
-                <div className="card bg-transparent">
-                  <div className="d-inline-block mb-3">
-                    <img src="/puce.png" className="bigIcon" />
-                    <span className="fs-5"> Lorem Ipsum ad</span>
+                <div className="card">
+                  <div className="card-body">
+                    <div className="d-inline-block d-flex flex-row align-items-center mb-3">
+                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <h4 className="fs-5"> Lorem Ipsum ad</h4>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In ullamcorper lorem ante, et tempus orci imperdiet vel.
+                    </p>
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                  </p>
                 </div>
               </div>
             </div>
 
             <div className="row">
-
               <div className="col">
-                <div className="card bg-transparent">
-                  <div className="d-inline-block mb-3">
-                    <img src="/puce.png" className="bigIcon" />
-                    <span className="fs-5"> Lorem Ipsum ad</span>
+                <div className="card">
+                  <div className="card-body">
+                    <div className="d-inline-block d-flex flex-row align-items-center mb-3">
+                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <h4 className="fs-5"> Lorem Ipsum ad</h4>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In ullamcorper lorem ante, et tempus orci imperdiet vel.
+                    </p>
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                  </p>
                 </div>
               </div>
               <div className="col">
-                <div className="card bg-transparent">
-                  <div className="d-inline-block mb-3">
-                    <img src="/puce.png" className="bigIcon" />
-                    <span className="fs-5"> Lorem Ipsum ad</span>
+                <div className="card">
+                  <div className="card-body">
+                    <div className="d-inline-block d-flex flex-row align-items-center mb-3">
+                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <h4 className="fs-5"> Lorem Ipsum ad</h4>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In ullamcorper lorem ante, et tempus orci imperdiet vel.
+                    </p>
                   </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                  </p>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -283,16 +293,112 @@ export default function Home() {
 
     <Section id="form">
       <div className="container py-5">
-        <div class="row">
-          <div class="col">
+        <div className="row">
+          <div className="col">
+            <div className="row">
+              <div className="card mb-3">
+                <div className="card-body">
+                  <a href="#" className="fs-3">
+                    <i className="lab la-instagram me-2"></i>
+                    Suivez-nous sur Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
             <Form />
           </div>
-          <div class="col text-center">
-            <img src="/engine.png" className="featured_engine" />
+          <div className="col text-center">
+            <div className="card">
+              <div className="card-body">
+                <img src="/engine.png" className="featured_engine" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </Section>
 
-  </div>
+    <Section id="social">
+      <div className="container py-5">
+        <div className="container">
+          <div className="row text-center">
+            <div className="py-2">
+              <a href="#" className="">
+                <i className="lab la-instagram me-2 icon-big"></i>
+              </a>
+              <h1 className="">Suivez-nous sur Instagram</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <Section id="">
+      <div className="container py-5">
+        <div className="row">
+          <div className="col">
+            <div className="card text-center">
+              <div className="card-body">
+                <div className="mb-4">
+                  <i class="las la-oil-can icon-medium"></i>
+                </div>
+                <h4 className="mb-5">jsdhf sjdhf</h4>
+                <p className="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nam a ligula at augue pulvinar fermentum.
+                  Nulla id tincidunt ligula.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-center">
+              <div className="card-body">
+                <div className="mb-4">
+                  <i class="las la-tachometer-alt icon-medium"></i>
+                </div>
+                <h4 className="mb-5">jsdhf sjdhf</h4>
+                <p className="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nam a ligula at augue pulvinar fermentum.
+                  Nulla id tincidunt ligula.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-center bg-red">
+              <div className="card-body">
+                <div className="mb-4">
+                  <i class="las la-save icon-medium"></i>
+                </div>
+                <h4 className="mb-5">jsdhf sjdhf</h4>
+                <p className="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nam a ligula at augue pulvinar fermentum.
+                  Nulla id tincidunt ligula.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-center bg-red">
+              <div className="card-body">
+                <div className="mb-4">
+                  <i className="las la-microchip icon-medium"></i>
+                </div>
+                <h4 className="mb-5">jsdhf sjdhf</h4>
+                <p className="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nam a ligula at augue pulvinar fermentum.
+                  Nulla id tincidunt ligula.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+  </div >
 }

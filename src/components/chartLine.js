@@ -7,11 +7,18 @@ export default function ChartLine(){
     datasets: [
       {
         label: 'Test',
-        data: [1, 3, 7, 1, 2, 10],
+        data: [1, 3, 7, 1, 2, 9],
         fill: false,
         backgroundColor: '#FF3434',
         borderColor: '#FF3434',
       },
+      {
+        label: 'Test2',
+        data: [1, 3, 5, 8, 9, 10],
+        fill: false,
+        backgroundColor: '#FFF',
+        borderColor: '#FFF',
+      }
     ],
   };
   const options = {

@@ -1,3 +1,4 @@
+/* ROOT */
 :root{
   --hard-black:#050505;
   --hard-red:#FF3434;
@@ -5,6 +6,19 @@
   --hard-grey: #111111;
   --light-grey:#AABBBB;
 }
+
+/* !!!!!!!!!!!!!!!!!!!! */
+.bg-red{
+  background-color: var(--hard-red);
+}
+.featured_audi{
+  max-width: 80%;
+}
+.featured_engine{
+  max-width: 60%;
+}
+
+/* TAGS */
 body{
   background-color: var(--hard-black);
   color: white;
@@ -19,6 +33,13 @@ nav .navbar_logo{
 p{
   color: var(--light-grey);
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: var(--light-red);
+}
 input,
 textarea,
 .input-group-text{
@@ -26,36 +47,87 @@ textarea,
   color: white !important;
   border: none !important;
 }
+
+/* UNIQUE ID */
 #featured{
   background-image: url('/featured.jpg');
   background-position: center;
   background-size:cover;
   height: 70vh;
 }
-#chart{
-  /* background-image: url(/hive.jpg); */
+#social{
+  background-image: url('/hive.jpg');
   background-position: center;
+  background-size: cover;
 }
 #band{
   background-color: var(--hard-red);
 }
-#band i{
+/* CARD */
+.card{
+  background-color: transparent;
+}
+/* TITLE */
+h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
+}
+.title-big{
+  
+}
+.title-medium{
+  size: 2rem;
+}
+.title-small{
+  
+}
+/* ICONS */
+.icon-big{
+  font-size: 7rem;
+  font-weight: 700;
+}
+.icon-medium{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.icon-small{
+
+}
+.icon-medium-rounded{
+  padding: 1rem;
+  border-radius: 50%;
   background-color: var(--light-red);
   color: white;
   border: none;
-  font-size: 4rem;
 }
-.featured_audi{
-  max-width: 80%;
+/* FONTS COLOR */
+.font-black{
+  color: var(--hard-black);
 }
-.featured_engine{
-  max-width: 60%;
+.font-red{
+  color: var(--hard-red);
 }
-.bigIcon{
-  width: 80px;
-  height: 80px;
+.font-grey{
+  color: var(--hard-grey);
 }
-.btn-primary{
-  background-color: var(--hard-red) !important;
+/* BACKGROUND */
+.bg-black{
+  background-color: var(--hard-black);
+}
+.bg-red{
+  background-color: var(--hard-red);
+}
+.bg-grey{
+  background-color: var(--hard-grey);
+}
+/* BUTTON */
+.btn:hover{
+  transform: scale(1.2) !important;
+}
+.btn-red{
+  background-color: var(--hard-red)!important;
   border: none;
+  color: white;
+}
+.btn-red:hover{
+  color: white!important;
 }
