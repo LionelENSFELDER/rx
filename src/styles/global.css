@@ -90,11 +90,14 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 .icon-small{
-
+  font-size: 2rem;
+  font-weight: 700;
 }
-.icon-medium-rounded{
-  padding: 1rem;
+.icon-rounded{
+  padding: 0.5rem;
   border-radius: 50%;
+}
+.icon-rounded-light-red{
   background-color: var(--light-red);
   color: white;
   border: none;
@@ -118,6 +121,9 @@ h1, h2, h3, h4, h5, h6{
 }
 .bg-grey{
   background-color: var(--hard-grey);
+}
+.bg-light-grey{
+  background-color: var(--light-grey);
 }
 /* BUTTON */
 .btn:hover{

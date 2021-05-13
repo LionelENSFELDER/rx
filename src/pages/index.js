@@ -8,6 +8,29 @@ import Form from '../components/form';
 
 export default function Home() {
 
+  const works = [
+    '/works/work (1).jpg',
+    '/works/work (2).jpg',
+    '/works/work (3).jpg',
+    '/works/work (4).jpg',
+    '/works/work (5).jpg',
+    '/works/work (6).jpg',
+    '/works/work (7).jpg',
+    '/works/work (8).jpg',
+    '/works/work (9).jpg',
+    '/works/work (10).jpg',
+    '/works/work (11).jpg',
+    '/works/work (12).jpg',
+    '/works/work (13).jpg',
+    '/works/work (14).jpg',
+    '/works/work (15).jpg',
+    '/works/work (16).jpg',
+    '/works/work (17).jpg',
+    '/works/work (18).jpg',
+    '/works/work (19).jpg',
+    '/works/work (20).jpg',
+  ];
+
   return <div>
 
     <Navbar />
@@ -24,33 +47,33 @@ export default function Home() {
     <Section id="stages">
       <div className="container py-5">
         <div className="row">
-          <div className="col text-center">
+          <div className="col-12 col-lg-4 text-center">
             <div className="mb-4">
-              <i className="las la-fire icon-medium font-red"></i>
+              <i className="las la-terminal icon-medium font-red"></i>
             </div>
-            <h4 className="mb-5">jsdhf sjdhf</h4>
+            <h4 className="mb-5">Reprogrammation</h4>
             <p className="">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nam a ligula at augue pulvinar fermentum.
               Nulla id tincidunt ligula.
             </p>
           </div>
-          <div className="col text-center">
+          <div className="col-12 col-lg-4 text-center">
             <div className="mb-4">
-              <i className="las la-fire icon-medium font-red"></i>
+              <i className="las la-binoculars icon-medium font-red"></i>
             </div>
-            <h4 className="mb-5">jsdhf sjdhf</h4>
+            <h4 className="mb-5">Consulting</h4>
             <p className="">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nam a ligula at augue pulvinar fermentum.
               Nulla id tincidunt ligula.
             </p>
           </div>
-          <div className="col text-center">
+          <div className="col-12 col-lg-4 text-center">
             <div className="mb-4">
-              <i className="las la-fire icon-medium font-red"></i>
+              <i className="las la-microchip icon-medium font-red"></i>
             </div>
-            <h4 className="mb-5">jsdhf sjdhf</h4>
+            <h4 className="mb-5">Diagnostique</h4>
             <p className="">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Nam a ligula at augue pulvinar fermentum.
@@ -66,14 +89,55 @@ export default function Home() {
       <div className="container py-5">
         <div className="row">
           <div className="col">
-            <h3>dsfdg ghgh fhfhjhj </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              In ullamcorper lorem ante, et tempus orci imperdiet vel.
-              Duis egestas egestas dolor commodo iaculis. Mauris ultricies velit in varius finibus.
-              Duis eu facilisis lectus. Curabitur id ante quam. Vivamus sed lorem neque.
-              Cras a dolor sagittis, placerat velit quis, venenatis leo.
+            <h3>Intervention</h3>
+            <p className="mb-4">
+              Avant toute intervention, une inspection générale du moteur est effectuée.
+              Nous effectuons ensuite l'acquisition des données pour connaître précisément l'état du moteur.
+              En fonction des souhaits du client nous faisons des préconisations d'amélioration et d'ordre de puissance.
+              Une phase de discution sur l'ajout d'options éventuelles (rupteur popcorn, Launch Control, stratégie de démarrage, EGR off etc...) est nécessaire pour pousser la personnalisation.
+              Nous récupérons ensuite la cartographie d'origine pour l'éditer.
+              Après l'injection de la cartographie modifiée nous effectuons des tests et l'acquisition des logs.
             </p>
+            <div className="">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ color: '#0C8C40', fontWeight: 'bold' }}>Stage 1+</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style={{ color: '#FF8A00', fontWeight: 'bold' }}>Stage 2+</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style={{ color: '#FF3434', fontWeight: 'bold' }}>Stage 3, 3+</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <p>
+                    <ul>
+                      <li>Aucune modification mécanique nécessaire.</li>
+                      <li>Plage de puissance : +15-25%.</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <p>
+                    <ul>
+                      <li>Filtre à air sport.</li>
+                      <li>Catalyseur sport / décatalysé.</li>
+                      <li>Embreillage sport si profile hard.</li>
+                      <li>Plage de puissance : +25-40%.</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <p>
+                    <ul>
+                      <li>Filtre à air sport.</li>
+                      <li>Catalyseur sport / décatalysé.</li>
+                      <li>Embreillage sport.</li>
+                      <li>turbo et injection.</li>
+                      <li>Plage de puissance : +70-100%.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="col">
             <div className="card shadow bg-transparent">
@@ -89,58 +153,40 @@ export default function Home() {
     <Section id="band">
       <div className="container py-5">
         <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="row">
-                <div className="col-3">
-                  <div className="">
-                    <i className="las la-fire icon-medium icon-medium-rounded"></i>
-                  </div>
-                </div>
-                <div className="col-9 d-flex flex-column justify-content-center">
-                  <span className="">sdfgdfghdfgdfgdfg</span>
-                  <p className="">
-                    sdfsdfsdfsdfsdfsf
-                  </p>
-                </div>
+          <div className="position-static row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div className="col mb-4 mb-lg-0">
+              <div className="card border-0 flex-row align-items-center">
+                <i className="las la-coffee icon-medium icon-rounded icon-rounded-light-red me-3"></i>
+                <span className="">Prise de contact et expréssion du besoin.</span>
               </div>
             </div>
-            <div className="col">
-              <div className="row">
-                <div className="col-3">
-                  <div className="">
-                    <i className="las la-lemon icon-medium icon-medium-rounded"></i>
-                  </div>
-                </div>
-                <div className="col-9 d-flex flex-column justify-content-center">
-                  <span className="">sdfgdfghdfgdfgdfg</span>
-                  <p className="">
-                    sdfsdfsdfsdfsdfsf
-                  </p>
-                </div>
+            <div className="col mb-4 mb-lg-0">
+              <div className="card border-0 flex-row align-items-center">
+                <i className="las la-save icon-medium icon-rounded icon-rounded-light-red me-3"></i>
+                <span className="">Extraction et envoi du fichier de cartographie.</span>
               </div>
             </div>
-            <div className="col">
-              <div className="row">
-                <div className="col-3">
-                  <div className="">
-                    <i className="las la-rocket icon-medium icon-medium-rounded"></i>
-                  </div>
-                </div>
-                <div className="col-9 d-flex flex-column justify-content-center">
-                  <span className="">sdfgdfghdfgdfgdfg</span>
-                  <p className="">
-                    sdfsdfsdfsdfsdfsf
-                  </p>
-                </div>
+            <div className="col mb-4 mb-lg-0">
+              <div className="card border-0 flex-row align-items-center">
+                <i className="las la-laptop-code icon-medium icon-rounded icon-rounded-light-red me-3"></i>
+                <span className="">Edition personnalisé du fichier de cartographie.</span>
+              </div>
+            </div>
+            <div className="col mb-4 mb-lg-0">
+              <div className="card border-0 flex-row align-items-center">
+                <i className="las la-comments icon-medium icon-rounded icon-rounded-light-red me-3"></i>
+                <span className="">Retours du clien et retrouches fines.</span>
               </div>
             </div>
           </div>
+          <span className="position-relative fw-lighter fst-italic" style={{ fontSize: '0.8rem', top: '100%' }}>
+            *Nous travaillons aussi avec les logs ciblés pour les utilisateurs expérimentés.
+          </span>
         </div>
       </div>
     </Section>
 
-    <Section id="map">
+    {/* <Section id="map">
       <div className="container py-5">
         <div className="row">
           <div className="col">
@@ -162,51 +208,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Section>
+    </Section> */}
 
     <Section id="works">
-      <div className="container">
-        <div className="row row-cols-1 row-cols-md-4 g-4">
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (1).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (2).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (3).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (4).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (5).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (6).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src="/works/1 (7).jpg" className="h-100" alt="..." />
-            </div>
-          </div>
+      <div className="container py-5">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          
+          {works.map(link =>{
+            return (
+              <div className="col">
+                <div className="card h-100">
+                  <img src={link} className="h-100" alt="..." />
+                </div>
+              </div>
+            )
+          })}
+
         </div>
       </div>
     </Section>
 
-    <Section id="">
+    {/* <Section id="">
       <div className="container py-5">
         <div className="row">
 
@@ -289,12 +311,12 @@ export default function Home() {
 
         </div>
       </div>
-    </Section>
+    </Section> */}
 
     <Section id="form">
       <div className="container py-5">
         <div className="row">
-          <div className="col">
+          <div className="col-12 col-lg-6">
             <div className="row">
               <div className="card mb-3">
                 <div className="card-body">
@@ -307,7 +329,7 @@ export default function Home() {
             </div>
             <Form />
           </div>
-          <div className="col text-center">
+          <div className="col-12 col-lg-6 text-center">
             <div className="card">
               <div className="card-body">
                 <img src="/engine.png" className="featured_engine" />
@@ -333,7 +355,7 @@ export default function Home() {
       </div>
     </Section>
 
-    <Section id="">
+    {/* <Section id="">
       <div className="container py-5">
         <div className="row">
           <div className="col">
@@ -398,6 +420,16 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </Section> */}
+
+    <Section id="footer">
+      <footer>
+        <div className="container">
+          <p className="">
+            © 2021, RX. Made with <i class="las la-burn"></i> by <a href="https://lioens.dev/">Lionel Ensfelder</a>.
+          </p>
+        </div>
+      </footer>
     </Section>
 
   </div >
