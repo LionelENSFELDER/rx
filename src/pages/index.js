@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../components/section";
 import Navbar from "../components/navbar";
 import ChartLine from "../components/chartLine";
-import Map from '../../static/world_map.svg';
 import Form from '../components/form';
 
 
@@ -38,13 +37,13 @@ export default function Home() {
     <Section id="featured">
       <div className="py-5">
         <div className="text-center">
-          <h1>Lorem Ipsum Stale</h1>
-          <button type="button" className="btn btn-lg btn-red">Contact</button>
+          <h1>Reprogrammation sur mesure en indépendant.</h1>
+          <a type="button" className="btn btn-lg btn-red" href="#contact">Contact</a>
         </div>
       </div>
     </Section>
 
-    <Section id="stages">
+    <Section id="prestations">
       <div className="container py-5">
         <div className="row">
           <div className="col-12 col-lg-4 text-center">
@@ -85,11 +84,12 @@ export default function Home() {
       </div>
     </Section>
 
-    <Section id="chart">
+    <Section id="sur-place">
       <div className="container py-5">
+        <h1 className="mb-5">Intervention sur place</h1>
         <div className="row">
-          <div className="col">
-            <h3>Intervention</h3>
+          <div className="col-12 col-md-6">
+            {/* logo poignee de main */}
             <p className="mb-4">
               Avant toute intervention, une inspection générale du moteur est effectuée.
               Nous effectuons ensuite l'acquisition des données pour connaître précisément l'état du moteur.
@@ -100,33 +100,33 @@ export default function Home() {
             </p>
             <div className="">
               <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ color: '#0C8C40', fontWeight: 'bold' }}>Stage 1+</button>
-                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style={{ color: '#FF8A00', fontWeight: 'bold' }}>Stage 2+</button>
-                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style={{ color: '#FF3434', fontWeight: 'bold' }}>Stage 3, 3+</button>
+                <div className="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ color: '#0C8C40', fontWeight: 'bold' }}>Stage 1+</button>
+                  <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style={{ color: '#FF8A00', fontWeight: 'bold' }}>Stage 2+</button>
+                  <button className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style={{ color: '#FF3434', fontWeight: 'bold' }}>Stage 3+</button>
                 </div>
               </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <p>
+              <div className="tab-content" id="nav-tabContent">
+                <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div>
                     <ul>
                       <li>Aucune modification mécanique nécessaire.</li>
                       <li>Plage de puissance : +15-25%.</li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <p>
+                <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div>
                     <ul>
                       <li>Filtre à air sport.</li>
                       <li>Catalyseur sport / décatalysé.</li>
                       <li>Embreillage sport si profile hard.</li>
                       <li>Plage de puissance : +25-40%.</li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <p>
+                <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <div>
                     <ul>
                       <li>Filtre à air sport.</li>
                       <li>Catalyseur sport / décatalysé.</li>
@@ -134,12 +134,12 @@ export default function Home() {
                       <li>turbo et injection.</li>
                       <li>Plage de puissance : +70-100%.</li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-md-6">
             <div className="card shadow bg-transparent">
               <div className="card-body">
                 <ChartLine />
@@ -150,20 +150,22 @@ export default function Home() {
       </div>
     </Section>
 
-    <Section id="band">
+    <Section id="a-distance">
       <div className="container py-5">
         <div className="container">
+          {/* icone intrernet et plug */}
+          <h1 className="mb-5">Intervention à distance</h1>
           <div className="position-static row row-cols-1 row-cols-md-2 row-cols-lg-4">
             <div className="col mb-4 mb-lg-0">
               <div className="card border-0 flex-row align-items-center">
                 <i className="las la-coffee icon-medium icon-rounded icon-rounded-light-red me-3"></i>
-                <span className="">Prise de contact et expréssion du besoin.</span>
+                <span className="">Prise de contact et expréssion du besoin par le client.</span>
               </div>
             </div>
             <div className="col mb-4 mb-lg-0">
               <div className="card border-0 flex-row align-items-center">
                 <i className="las la-save icon-medium icon-rounded icon-rounded-light-red me-3"></i>
-                <span className="">Extraction et envoi du fichier de cartographie.</span>
+                <span className="">Extraction et envoi du fichier de cartographie par le client.</span>
               </div>
             </div>
             <div className="col mb-4 mb-lg-0">
@@ -175,11 +177,11 @@ export default function Home() {
             <div className="col mb-4 mb-lg-0">
               <div className="card border-0 flex-row align-items-center">
                 <i className="las la-comments icon-medium icon-rounded icon-rounded-light-red me-3"></i>
-                <span className="">Retours du clien et retrouches fines.</span>
+                <span className="">Retours du client et ajustements.</span>
               </div>
             </div>
           </div>
-          <span className="position-relative fw-lighter fst-italic" style={{ fontSize: '0.8rem', top: '100%' }}>
+          <span className="position-relative fw-lighter fst-italic font-black" style={{ fontSize: '0.8rem', top: '100%' }}>
             *Nous travaillons aussi avec les logs ciblés pour les utilisateurs expérimentés.
           </span>
         </div>
@@ -210,15 +212,16 @@ export default function Home() {
       </div>
     </Section> */}
 
-    <Section id="works">
+    <Section id="realisations">
       <div className="container py-5">
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <h1 className="mb-5">Réalisations</h1>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           
           {works.map(link =>{
             return (
-              <div className="col">
+              <div className="col" key={works.indexOf(link)}>
                 <div className="card h-100">
-                  <img src={link} className="h-100" alt="..." />
+                  <img src={link} className="h-100" alt="" />
                 </div>
               </div>
             )
@@ -251,7 +254,7 @@ export default function Home() {
                 <div className="card">
                   <div className="card-body">
                     <div className="d-inline-block d-flex flex-row align-items-center mb-3">
-                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <i className="las la-car icon-medium font-red me-3"></i>
                       <h4 className="fs-5"> Lorem Ipsum ad</h4>
                     </div>
                     <p>
@@ -265,7 +268,7 @@ export default function Home() {
                 <div className="card">
                   <div className="card-body">
                     <div className="d-inline-block d-flex flex-row align-items-center mb-3">
-                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <i className="las la-car icon-medium font-red me-3"></i>
                       <h4 className="fs-5"> Lorem Ipsum ad</h4>
                     </div>
                     <p>
@@ -282,7 +285,7 @@ export default function Home() {
                 <div className="card">
                   <div className="card-body">
                     <div className="d-inline-block d-flex flex-row align-items-center mb-3">
-                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <i className="las la-car icon-medium font-red me-3"></i>
                       <h4 className="fs-5"> Lorem Ipsum ad</h4>
                     </div>
                     <p>
@@ -296,7 +299,7 @@ export default function Home() {
                 <div className="card">
                   <div className="card-body">
                     <div className="d-inline-block d-flex flex-row align-items-center mb-3">
-                      <i class="las la-car icon-medium font-red me-3"></i>
+                      <i className="las la-car icon-medium font-red me-3"></i>
                       <h4 className="fs-5"> Lorem Ipsum ad</h4>
                     </div>
                     <p>
@@ -313,20 +316,11 @@ export default function Home() {
       </div>
     </Section> */}
 
-    <Section id="form">
+    <Section id="contact">
       <div className="container py-5">
+        <h1 className="mb-5">Contact</h1>
         <div className="row">
           <div className="col-12 col-lg-6">
-            <div className="row">
-              <div className="card mb-3">
-                <div className="card-body">
-                  <a href="#" className="fs-3">
-                    <i className="lab la-instagram me-2"></i>
-                    Suivez-nous sur Instagram
-                  </a>
-                </div>
-              </div>
-            </div>
             <Form />
           </div>
           <div className="col-12 col-lg-6 text-center">
@@ -362,7 +356,7 @@ export default function Home() {
             <div className="card text-center">
               <div className="card-body">
                 <div className="mb-4">
-                  <i class="las la-oil-can icon-medium"></i>
+                  <i className="las la-oil-can icon-medium"></i>
                 </div>
                 <h4 className="mb-5">jsdhf sjdhf</h4>
                 <p className="">
@@ -377,7 +371,7 @@ export default function Home() {
             <div className="card text-center">
               <div className="card-body">
                 <div className="mb-4">
-                  <i class="las la-tachometer-alt icon-medium"></i>
+                  <i className="las la-tachometer-alt icon-medium"></i>
                 </div>
                 <h4 className="mb-5">jsdhf sjdhf</h4>
                 <p className="">
@@ -392,7 +386,7 @@ export default function Home() {
             <div className="card text-center bg-red">
               <div className="card-body">
                 <div className="mb-4">
-                  <i class="las la-save icon-medium"></i>
+                  <i className="las la-save icon-medium"></i>
                 </div>
                 <h4 className="mb-5">jsdhf sjdhf</h4>
                 <p className="">
@@ -426,7 +420,7 @@ export default function Home() {
       <footer>
         <div className="container">
           <p className="">
-            © 2021, RX. Made with <i class="las la-burn"></i> by <a href="https://lioens.dev/">Lionel Ensfelder</a>.
+            © 2021, RX. Made with <i className="las la-burn"></i> by <a href="https://lioens.dev/">Lionel Ensfelder</a>.
           </p>
         </div>
       </footer>

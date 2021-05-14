@@ -33,13 +33,13 @@ export default function Form() {
           <div className="col-12 col-md-6">
             <div className="input-group mb-4">
               <span className="input-group-text" id="name">
-                <i class="las la-user-tie"></i>
+                <i className="las la-user-tie"></i>
               </span>
               <input type="text" name="name" className="form-control form-control-lg" placeholder="Prénom" aria-label="name" aria-describedby="name" />
             </div>
             <div className="input-group">
               <span className="input-group-text" id="car">
-                <i class="las la-car-side"></i>
+                <i className="las la-car-side"></i>
               </span>
               <input type="text" name="car" className="form-control form-control-lg" placeholder="Voiture" aria-label="car" aria-describedby="car" />
             </div>
@@ -47,13 +47,13 @@ export default function Form() {
           <div className="col-12 col-md-6">
             <div className="input-group mb-4">
               <span className="input-group-text" id="tel">
-                <i class="las la-mobile"></i>
+                <i className="las la-mobile"></i>
               </span>
               <input type="tel" name="tel" className="form-control form-control-lg" placeholder="Téléphone" aria-label="tel" aria-describedby="tel" />
             </div>
             <div className="input-group">
               <span className="input-group-text" id="instagram">
-                <i class="lab la-instagram"></i>
+                <i className="lab la-instagram"></i>
               </span>
               <input type="text" name="instagram" className="form-control form-control-lg" placeholder="Instagram" aria-label="instagram" aria-describedby="instagram" />
             </div>
@@ -64,7 +64,7 @@ export default function Form() {
             <textarea name="message" className="form-control form-control-lg" placeholder="Votre message"></textarea>
           </div>
         </div>
-        <button type="button" className="btn btn-primary btn-lg" onClick={sendFom}>Envoyer</button>
+        <button type="button" className="btn btn-lg btn-red" onClick={sendFom}>Envoyer</button>
       </form>
     </div>
   )

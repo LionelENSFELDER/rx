@@ -50,17 +50,17 @@ textarea,
 
 /* UNIQUE ID */
 #featured{
-  background-image: url('/featured.jpg');
+  background-image: url('/works/work (11).jpg');
   background-position: center;
   background-size:cover;
-  height: 70vh;
+  height: 80vh;
 }
 #social{
   background-image: url('/hive.jpg');
   background-position: center;
   background-size: cover;
 }
-#band{
+#a-distance{
   background-color: var(--hard-red);
 }
 /* CARD */
