@@ -221,7 +221,7 @@ export default function Home() {
             return (
               <div className="col" key={works.indexOf(link)}>
                 <div className="card h-100">
-                  <img src={link} className="h-100" alt="" />
+                  <img src={link} className="img-fluid" alt="" />
                 </div>
               </div>
             )
