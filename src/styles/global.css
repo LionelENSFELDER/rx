@@ -47,6 +47,11 @@ textarea,
   color: white !important;
   border: none !important;
 }
+input:invalid, textarea:invalid {
+  background-color: var(--light-red) !important;
+  color: white !important;
+  border: none !important;
+}
 
 /* UNIQUE ID */
 #featured{
@@ -72,7 +77,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 .title-big{
-  
+  size: 2.2rem;
 }
 .title-medium{
   size: 2rem;
