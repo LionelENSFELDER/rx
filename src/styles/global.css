@@ -1,8 +1,8 @@
 /* ROOT */
 :root{
   --hard-black:#050505;
-  --hard-red:#FF3434;
-  --light-red:#ff4d4d;
+  --hard-red:#961724;
+  --light-red:#B91031;
   --hard-grey: #111111;
   --light-grey:#AABBBB;
 }
@@ -28,7 +28,7 @@ nav{
 }
 nav .navbar_logo{
   width: 60px;
-  height: 40px;
+  height: 50px;
 }
 p{
   color: var(--light-grey);
@@ -55,10 +55,11 @@ input:invalid, textarea:invalid {
 
 /* UNIQUE ID */
 #featured{
-  background-image: url('/works/work (11).jpg');
+  /* background-image: url('/works/work (11).jpg');
   background-position: center;
-  background-size:cover;
-  height: 80vh;
+  background-size:cover; 
+  min-height: 50vh; */
+  max-height: 80vh;
 }
 #social{
   background-image: url('/hive.jpg');
@@ -135,10 +136,11 @@ h1, h2, h3, h4, h5, h6{
   transform: scale(1.2) !important;
 }
 .btn-red{
-  background-color: var(--hard-red)!important;
+  background-color: var(--hard-red) !important;
   border: none;
   color: white;
 }
 .btn-red:hover{
-  color: white!important;
+  color: white !important;
 }
+/* CAROUSEL */

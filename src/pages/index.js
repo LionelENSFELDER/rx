@@ -3,32 +3,55 @@ import Section from "../components/section";
 import Navbar from "../components/navbar";
 import ChartLine from "../components/chartLine";
 import Form from '../components/form';
+import Slider from '../components/slider';
 
 
 export default function Home() {
 
   const works = [
-    '/works/work (1).jpg',
-    '/works/work (2).jpg',
-    '/works/work (3).jpg',
-    '/works/work (4).jpg',
-    '/works/work (5).jpg',
-    '/works/work (6).jpg',
-    '/works/work (7).jpg',
-    '/works/work (8).jpg',
-    '/works/work (9).jpg',
-    '/works/work (10).jpg',
-    '/works/work (11).jpg',
-    '/works/work (12).jpg',
-    '/works/work (13).jpg',
-    '/works/work (14).jpg',
-    '/works/work (15).jpg',
-    '/works/work (16).jpg',
-    '/works/work (17).jpg',
-    '/works/work (18).jpg',
-    '/works/work (19).jpg',
-    '/works/work (20).jpg',
+    '/works/work01.jpg',
+    '/works/work02.jpg',
+    '/works/work03.jpg',
+    '/works/work04.jpg',
+    '/works/work05.jpg',
+    '/works/work06.jpg',
+    '/works/work07.jpg',
+    '/works/work08.jpg',
+    '/works/work09.jpg',
+    '/works/work10.jpg',
+    '/works/work11.jpg',
+    '/works/work12.jpg',
+    '/works/work13.jpg',
+    '/works/work14.jpg',
+    '/works/work15.jpg',
+    '/works/work16.jpg',
+    '/works/work17.jpg',
+    '/works/work18.jpg',
+    '/works/work19.jpg',
+    '/works/work20.jpg',
+    '/works/work21.jpg',
+    '/works/work22.jpg',
+    '/works/work23.jpg',
+    '/works/work24.jpg',
+    '/works/work25.jpg',
+    '/works/work26.jpg',
+    '/works/work27.jpg',
+    '/works/work28.jpg',
+    '/works/work29.jpg',
+    '/works/work30.jpg',
+    '/works/work31.jpg',
+    '/works/work32.jpg',
+    '/works/work33.jpg',
+    '/works/work34.jpg',
+    '/works/work35.jpg',
+    '/works/work36.jpg',
   ];
+
+  const sliders = [
+    '/works/work18.jpg',
+    '/works/work19.jpg',
+    '/works/work17.jpg',
+  ]
 
   return <div>
 
@@ -36,10 +59,11 @@ export default function Home() {
 
     <Section id="featured">
       <div className="py-5">
-        <div className="text-center">
+        <Slider id={"featured-slider"} slides={sliders}></Slider>
+        {/* <div className="text-center">
           <h1>Reprogrammation sur mesure en indépendant.</h1>
           <a type="button" className="btn btn-lg btn-red" href="#contact">Contact</a>
-        </div>
+        </div> */}
       </div>
     </Section>
 
@@ -215,8 +239,7 @@ export default function Home() {
     <Section id="realisations">
       <div className="container py-5">
         <h1 className="mb-5">Réalisations</h1>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           {works.map(link =>{
             return (
               <div className="col" key={works.indexOf(link)}>
@@ -226,7 +249,6 @@ export default function Home() {
               </div>
             )
           })}
-
         </div>
       </div>
     </Section>
@@ -339,7 +361,7 @@ export default function Home() {
         <div className="container">
           <div className="row text-center">
             <div className="py-2">
-              <a href="#" className="">
+              <a href="https://www.instagram.com/rxdev.technics/" target="_blank" className="">
                 <i className="lab la-instagram me-2 icon-big"></i>
               </a>
               <h1 className="">Suivez-nous sur Instagram</h1>
