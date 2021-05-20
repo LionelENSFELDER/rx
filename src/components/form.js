@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import * as emailjs from 'emailjs-com/dist/email.min.js';
 emailjs.init('user_o1JLUuc75Y9FwtRUQK2Hh');
 

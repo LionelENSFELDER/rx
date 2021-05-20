@@ -58,8 +58,8 @@ input:invalid, textarea:invalid {
   /* background-image: url('/works/work (11).jpg');
   background-position: center;
   background-size:cover; 
-  min-height: 50vh; */
-  max-height: 80vh;
+  min-height: 50vh;
+  max-height: 80vh; */
 }
 #social{
   background-image: url('/hive.jpg');
@@ -68,6 +68,12 @@ input:invalid, textarea:invalid {
 }
 #a-distance{
   background-color: var(--hard-red);
+}
+.featured-carousel-item{
+  min-height: 50vh;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 /* CARD */
 .card{
@@ -144,3 +150,7 @@ h1, h2, h3, h4, h5, h6{
   color: white !important;
 }
 /* CAROUSEL */
+.carousel-item{
+  background-position: center !important;
+  background-size: cover !important;
+}

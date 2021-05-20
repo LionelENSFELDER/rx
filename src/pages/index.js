@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Section from "../components/section";
 import Navbar from "../components/navbar";
 import ChartLine from "../components/chartLine";
@@ -47,9 +47,9 @@ export default function Home() {
     '/works/work36.jpg',
   ];
 
-  const sliders = [
-    '/works/work18.jpg',
+  const slides = [
     '/works/work19.jpg',
+    '/works/work18.jpg',
     '/works/work17.jpg',
   ]
 
@@ -59,7 +59,7 @@ export default function Home() {
 
     <Section id="featured">
       <div className="py-5">
-        <Slider id={"featured-slider"} slides={sliders}></Slider>
+        <Slider id={"featured-slider"} slides={slides}></Slider>
         {/* <div className="text-center">
           <h1>Reprogrammation sur mesure en indépendant.</h1>
           <a type="button" className="btn btn-lg btn-red" href="#contact">Contact</a>
@@ -348,7 +348,7 @@ export default function Home() {
           <div className="col-12 col-lg-6 text-center">
             <div className="card">
               <div className="card-body">
-                <img src="/engine.png" className="featured_engine" />
+                <img src="/engine.png" className="featured_engine" alt=""/>
               </div>
             </div>
           </div>
@@ -361,7 +361,7 @@ export default function Home() {
         <div className="container">
           <div className="row text-center">
             <div className="py-2">
-              <a href="https://www.instagram.com/rxdev.technics/" target="_blank" className="">
+              <a href="https://www.instagram.com/rxdev.technics/" target="_blank" rel="noreferrer" className="">
                 <i className="lab la-instagram me-2 icon-big"></i>
               </a>
               <h1 className="">Suivez-nous sur Instagram</h1>

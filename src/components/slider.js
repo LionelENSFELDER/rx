@@ -1,21 +1,21 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 
 export default function Slider(props){
 
   return(
-    <div id={props.id} className="carousel slide" data-bs-ride="carousel">
+    <div id={props.id} className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
       <div className="carousel-inner">
         {props.slides.map(slide =>{
-            if(props.slides.indexOf(slide) == 0){
+            if(props.slides.indexOf(slide) === 0){
               return(
-                <div className="carousel-item active" key={slide} style={{backgroundImage: 'url(' + { slide } + ')', backgroundPosition: 'center', backgroundSize: 'cover'}}>
+                <div className="carousel-item featured-carousel-item active" key={slide} style={{ backgroundImage: `url(${slide})`}}>
                   {/* <img src={slide} className="img-fluid" alt="slide" /> */}
                 </div>
               )
             }else{
               return(
-                <div className="carousel-item" key={slide}>
-                  <img src={slide} className="img-fluid" alt="slide" />
+                <div className="carousel-item featured-carousel-item" key={slide} style={{ backgroundImage: `url(${slide})`}}>
+                  {/* <img src={slide} className="d-block w-100" alt="" /> */}
                 </div>
               )
             }
@@ -32,5 +32,3 @@ export default function Slider(props){
     </div>
   )
 }
-
-{/* add active for the first slide */}
