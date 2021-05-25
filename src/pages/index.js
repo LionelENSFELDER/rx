@@ -9,48 +9,48 @@ import Slider from '../components/slider';
 export default function Home() {
 
   const works = [
-    '/works/work01.jpg',
-    '/works/work02.jpg',
-    '/works/work03.jpg',
-    '/works/work04.jpg',
-    '/works/work05.jpg',
-    '/works/work06.jpg',
-    '/works/work07.jpg',
-    '/works/work08.jpg',
-    '/works/work09.jpg',
-    '/works/work10.jpg',
-    '/works/work11.jpg',
-    '/works/work12.jpg',
-    '/works/work13.jpg',
-    '/works/work14.jpg',
-    //'/works/work15.jpg',
-    '/works/work16.jpg',
-    '/works/work17.jpg',
-    '/works/work18.jpg',
-    '/works/work19.jpg',
-    '/works/work20.jpg',
-    '/works/work21.jpg',
-    '/works/work22.jpg',
-    '/works/work23.jpg',
-    '/works/work24.jpg',
-    '/works/work25.jpg',
-    '/works/work26.jpg',
-    '/works/work27.jpg',
-    '/works/work28.jpg',
-    '/works/work29.jpg',
-    '/works/work30.jpg',
-    '/works/work31.jpg',
-    '/works/work32.jpg',
-    '/works/work33.jpg',
-    '/works/work34.jpg',
-    '/works/work35.jpg',
-    '/works/work36.jpg',
+    './works/work01.jpg',
+    './works/work02.jpg',
+    './works/work03.jpg',
+    './works/work04.jpg',
+    './works/work05.jpg',
+    './works/work06.jpg',
+    './works/work07.jpg',
+    './works/work08.jpg',
+    './works/work09.jpg',
+    './works/work10.jpg',
+    './works/work11.jpg',
+    './works/work12.jpg',
+    './works/work13.jpg',
+    './works/work14.jpg',
+    //'./works/work15.jpg',
+    './works/work16.jpg',
+    './works/work17.jpg',
+    './works/work18.jpg',
+    './works/work19.jpg',
+    './works/work20.jpg',
+    './works/work21.jpg',
+    './works/work22.jpg',
+    './works/work23.jpg',
+    './works/work24.jpg',
+    './works/work25.jpg',
+    './works/work26.jpg',
+    './works/work27.jpg',
+    './works/work28.jpg',
+    './works/work29.jpg',
+    './works/work30.jpg',
+    './works/work31.jpg',
+    './works/work32.jpg',
+    './works/work33.jpg',
+    './works/work34.jpg',
+    './works/work35.jpg',
+    './works/work36.jpg',
   ];
 
   const slides = [
-    '/works/work19.jpg',
-    '/works/work18.jpg',
-    '/works/work17.jpg',
+    './works/work19.jpg',
+    './works/work18.jpg',
+    './works/work17.jpg',
   ]
 
   return <div>
@@ -348,7 +348,7 @@ export default function Home() {
           <div className="col-12 col-lg-6 text-center">
             <div className="card">
               <div className="card-body">
-                <img src="/engine.png" className="featured_engine" alt=""/>
+                <img src="./engine.png" className="featured_engine" alt=""/>
               </div>
             </div>
           </div>
