@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Section from "../components/section";
 import Navbar from "../components/navbar";
 import ChartLine from "../components/chartLine";
@@ -23,7 +23,7 @@ export default function Home() {
     '/works/work12.jpg',
     '/works/work13.jpg',
     '/works/work14.jpg',
-    '/works/work15.jpg',
+    //'/works/work15.jpg',
     '/works/work16.jpg',
     '/works/work17.jpg',
     '/works/work18.jpg',
