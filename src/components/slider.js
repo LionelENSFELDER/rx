@@ -3,7 +3,7 @@ import React from 'react';
 export default function Slider(props){
 
   return(
-    <div id={props.id} className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
+    <div id={props.id} className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
       <div className="carousel-inner">
         {props.slides.map(slide =>{
             if(props.slides.indexOf(slide) === 0){
