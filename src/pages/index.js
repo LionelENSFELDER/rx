@@ -141,7 +141,7 @@ export default function Home () {
 
       <Section id='sur-place'>
         <div className='container py-5'>
-          <h1 className='mb-5'><i class="las la-oil-can" />Intervention sur place</h1>
+          <h1 className='mb-5'><i class="las la-oil-can me-2" />Intervention sur place</h1>
           <div className='row'>
             <div className='col-12 col-md-6'>
               {/* logo poignee de main */}
@@ -209,7 +209,7 @@ export default function Home () {
         <div className='container py-5'>
           <div className='container'>
             {/* icone intrernet et plug */}
-            <h1 className='mb-5'><i class="las la-plug" />Intervention à distance</h1>
+            <h1 className='mb-5'><i class="las la-plug me-2" />Intervention à distance</h1>
             <div className='position-static row row-cols-1 row-cols-md-2 row-cols-lg-4'>
               <div className='col mb-4 mb-lg-0'>
                 <div className='card border-0 flex-row align-items-center'>
@@ -269,7 +269,7 @@ export default function Home () {
 
       <Section id='realisations'>
         <div className='container py-5'>
-          <h1 className='mb-5'><i class="las la-camera-retro" />Réalisations</h1>
+          <h1 className='mb-5'><i class="las la-camera-retro me-2" />Réalisations</h1>
           <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4'>
             {works.map(link => {
               return (
@@ -371,7 +371,7 @@ export default function Home () {
 
       <Section id='contact'>
         <div className='container py-5'>
-          <h1 className='mb-5'><i class="las la-bullhorn" />Contact</h1>
+          <h1 className='mb-5'><i class="las la-bullhorn me-2" />Contact</h1>
           <div className='row'>
             <div className='col-12 col-lg-6'>
               <Form />
