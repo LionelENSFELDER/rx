@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Section from '../components/section'
 import Navbar from '../components/navbar'
 import ChartLine from '../components/chartLine'
 import Form from '../components/form'
 import Slider from '../components/slider'
 
-export default function Home () {
+export default function Home() {
   const works = [
     './works/work01.jpg',
     './works/work02.jpg',
@@ -56,13 +56,11 @@ export default function Home () {
       <Navbar />
 
       <Section id='featured'>
-        <div className=''>
-          <Slider id='featured-slider' slides={slides} />
-          <div id='scroll-down-icon' className='text-center'>
-            <a href='#prestations'>
-              <i className='las la-arrow-circle-down font-red' />
-            </a>
-          </div>
+        <Slider id='featured-slider' slides={slides} />
+        <div id='scroll-down-icon' className='text-center'>
+          <a href='#prestations'>
+            <i className='las la-arrow-circle-down font-red' />
+          </a>
         </div>
       </Section>
 

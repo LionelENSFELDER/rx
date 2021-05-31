@@ -57,7 +57,7 @@ input:invalid, textarea:invalid {
 /* UNIQUE ID */
 #scroll-down-icon{
   position: relative;
-  bottom: 100px;
+  bottom: 130px;
   font-size: 3.5rem;
   animation: 2s linear 1s infinite both running scrollDown;
 }
@@ -160,12 +160,12 @@ h1, h2, h3, h4, h5, h6{
     height: 40vh;
   }
   #scroll-down-icon{
-    bottom: 50px;
+    bottom: 100px;
   }
 }
 /* ANIMATIONS */
 @keyframes scrollDown {
   0% { transform: translateY(0) }
-  50%   { transform: translateY(15px) }
+  50%   { transform: translateY(50px) }
   100%   { transform: translateY(0) }
 }
