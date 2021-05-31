@@ -6,7 +6,9 @@
   --hard-grey: #111111;
   --light-grey:#AABBBB;
 }
-
+html, body{
+  scroll-behavior: smooth;
+}
 /* !!!!!!!!!!!!!!!!!!!! */
 .bg-red{
   background-color: var(--hard-red);
@@ -52,14 +54,12 @@ input:invalid, textarea:invalid {
   color: white !important;
   border: none !important;
 }
-
 /* UNIQUE ID */
-#featured{
-  /* background-image: url('/works/work (11).jpg');
-  background-position: center;
-  background-size:cover; 
-  min-height: 50vh;
-  max-height: 80vh; */
+#scroll-down-icon{
+  position: relative;
+  bottom: 100px;
+  font-size: 3.5rem;
+  animation: 2s linear 1s infinite both running scrollDown;
 }
 #social{
   background-image: url('/hive.jpg');
@@ -70,7 +70,7 @@ input:invalid, textarea:invalid {
   background-color: var(--hard-red);
 }
 .featured-carousel-item{
-  min-height: 50vh;
+  /* min-height: 50vh; */
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -153,4 +153,19 @@ h1, h2, h3, h4, h5, h6{
 .carousel-item{
   background-position: center !important;
   background-size: cover !important;
+}
+/* MEDIA QUERY */
+@media (max-width: 992px) {
+  .featured-carousel-item{
+    height: 40vh;
+  }
+  #scroll-down-icon{
+    bottom: 50px;
+  }
+}
+/* ANIMATIONS */
+@keyframes scrollDown {
+  0% { transform: translateY(0) }
+  50%   { transform: translateY(15px) }
+  100%   { transform: translateY(0) }
 }

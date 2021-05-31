@@ -6,44 +6,6 @@ import Form from '../components/form'
 import Slider from '../components/slider'
 
 export default function Home () {
-  useEffect(() => {
-    test()
-    // getInstagramPictures('rxdev.technics')
-    //   .then(pictures => console.log('Pictures:', pictures))
-    //   .catch(error => console.error('Error:', error))
-  })
-
-  async function getInstagramPictures (profileName) {
-    const baseUrl = 'https://www.instagram.com'
-    const profileUrl = `${baseUrl}/${profileName}`
-    const jsonDataUrl = `${profileUrl}/?__a=1`
-    const response = await fetch(jsonDataUrl)
-    const jsonData = await response.json()
-    const pictures = jsonData.graphql.user.edge_owner_to_timeline_media.edges
-    if (response.ok) {
-      console.log(pictures)
-      return pictures
-    } else {
-      throw new Error(pictures)
-    }
-  }
-
-  function test() {
-    fetch("https://instagram10.p.rapidapi.com/api/rxdev.technics", {
-      "method": "GET",
-      "headers": {
-        "x-rapidapi-key": "5da39156c8msh8ef4f15ceacb8ebp15e5b3jsna18907cb5922",
-        "x-rapidapi-host": "instagram10.p.rapidapi.com"
-      }
-    })
-    .then(response => {
-      console.log(response);
-    })
-    .catch(err => {
-      console.error(err);
-    });
-  }
-
   const works = [
     './works/work01.jpg',
     './works/work02.jpg',
@@ -80,7 +42,7 @@ export default function Home () {
     './works/work33.jpg',
     './works/work34.jpg',
     './works/work35.jpg',
-    './works/work36.jpg',
+    './works/work36.jpg'
   ]
 
   const slides = [
@@ -94,12 +56,13 @@ export default function Home () {
       <Navbar />
 
       <Section id='featured'>
-        <div className='py-5'>
-          <Slider id={'featured-slider'} slides={slides}></Slider>
-          {/* <div className='text-center'>
-            <h1>Reprogrammation sur mesure en indépendant.</h1>
-            <a type='button' className='btn btn-lg btn-red' href='#contact'>Contact</a>
-          </div> */}
+        <div className=''>
+          <Slider id='featured-slider' slides={slides} />
+          <div id='scroll-down-icon' className='text-center'>
+            <a href='#prestations'>
+              <i className='las la-arrow-circle-down font-red' />
+            </a>
+          </div>
         </div>
       </Section>
 
@@ -130,7 +93,7 @@ export default function Home () {
               </div>
               <h4 className='mb-5'>Diagnostique électronique</h4>
               <p className=''>
-                Réalisation de diagnostique électronique, recherche de panne, vérification pré-controle technique. 
+                Réalisation de diagnostique électronique, recherche de panne, vérification pré-controle technique.
                 Un rapport détaillé vous est remi à la fin diagnostique.
               </p>
             </div>
@@ -141,7 +104,7 @@ export default function Home () {
 
       <Section id='sur-place'>
         <div className='container py-5'>
-          <h1 className='mb-5'><i class="las la-oil-can me-2" />Intervention sur place</h1>
+          <h1 className='mb-5'><i class='las la-oil-can me-2' />Intervention sur place</h1>
           <div className='row'>
             <div className='col-12 col-md-6'>
               {/* logo poignee de main */}
@@ -209,7 +172,7 @@ export default function Home () {
         <div className='container py-5'>
           <div className='container'>
             {/* icone intrernet et plug */}
-            <h1 className='mb-5'><i class="las la-plug me-2" />Intervention à distance</h1>
+            <h1 className='mb-5'><i class='las la-plug me-2' />Intervention à distance</h1>
             <div className='position-static row row-cols-1 row-cols-md-2 row-cols-lg-4'>
               <div className='col mb-4 mb-lg-0'>
                 <div className='card border-0 flex-row align-items-center'>
@@ -269,7 +232,7 @@ export default function Home () {
 
       <Section id='realisations'>
         <div className='container py-5'>
-          <h1 className='mb-5'><i class="las la-camera-retro me-2" />Réalisations</h1>
+          <h1 className='mb-5'><i class='las la-camera-retro me-2' />Réalisations</h1>
           <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4'>
             {works.map(link => {
               return (
@@ -371,7 +334,7 @@ export default function Home () {
 
       <Section id='contact'>
         <div className='container py-5'>
-          <h1 className='mb-5'><i class="las la-bullhorn me-2" />Contact</h1>
+          <h1 className='mb-5'><i class='las la-bullhorn me-2' />Contact</h1>
           <div className='row'>
             <div className='col-12 col-lg-6'>
               <Form />
