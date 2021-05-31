@@ -55,7 +55,7 @@ export default function Home() {
     <div>
       <Navbar />
 
-      <Section id='featured'>
+      <Section id='featured' className=''>
         <Slider id='featured-slider' slides={slides} />
         <div id='scroll-down-icon' className='text-center'>
           <a href='#prestations'>
