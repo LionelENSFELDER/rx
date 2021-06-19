@@ -21,7 +21,6 @@ export default function Home() {
     './works/work12.jpg',
     './works/work13.jpg',
     './works/work14.jpg',
-    // './works/work15.jpg',
     './works/work16.jpg',
     './works/work17.jpg',
     './works/work18.jpg',
@@ -204,30 +203,6 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* <Section id='map'>
-        <div className='container py-5'>
-          <div className='row'>
-            <div className='col'>
-              <div className='card shadow bg-grey'>
-                <div className='card-body'>
-                  <img src={Map} alt='lieux d'implantation' />
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <h3>Usfdg ghgh fhfhjhj </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                Duis egestas egestas dolor commodo iaculis. Mauris ultricies velit in varius finibus.
-                Duis eu facilisis lectus. Curabitur id ante quam. Vivamus sed lorem neque.
-                Cras a dolor sagittis, placerat velit quis, venenatis leo.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-
       <Section id='realisations'>
         <div className='container py-5'>
           <h1 className='mb-5'><i class='las la-camera-retro me-2' />Réalisations</h1>
@@ -244,91 +219,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
-      {/* <Section id=''>
-        <div className='container py-5'>
-          <div className='row'>
-
-            <div className='col'>
-              <div className='card bg-transparent'>
-                <div className='card-body'>
-                  <h3>Dsfdg ghgh fhfhjhj </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                  </p>
-                  <img className='featured_audi' src='/audi.png' alt='' />
-                </div>
-              </div>
-            </div>
-
-            <div className='col'>
-              <div className='row mb-3'>
-                <div className='col'>
-                  <div className='card'>
-                    <div className='card-body'>
-                      <div className='d-inline-block d-flex flex-row align-items-center mb-3'>
-                        <i className='las la-car icon-medium font-red me-3'></i>
-                        <h4 className='fs-5'> Lorem Ipsum ad</h4>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className='col'>
-                  <div className='card'>
-                    <div className='card-body'>
-                      <div className='d-inline-block d-flex flex-row align-items-center mb-3'>
-                        <i className='las la-car icon-medium font-red me-3'></i>
-                        <h4 className='fs-5'> Lorem Ipsum ad</h4>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className='row'>
-                <div className='col'>
-                  <div className='card'>
-                    <div className='card-body'>
-                      <div className='d-inline-block d-flex flex-row align-items-center mb-3'>
-                        <i className='las la-car icon-medium font-red me-3'></i>
-                        <h4 className='fs-5'> Lorem Ipsum ad</h4>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className='col'>
-                  <div className='card'>
-                    <div className='card-body'>
-                      <div className='d-inline-block d-flex flex-row align-items-center mb-3'>
-                        <i className='las la-car icon-medium font-red me-3'></i>
-                        <h4 className='fs-5'> Lorem Ipsum ad</h4>
-                      </div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        In ullamcorper lorem ante, et tempus orci imperdiet vel.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </Section> */}
 
       <Section id='contact'>
         <div className='container py-5'>
@@ -362,73 +252,6 @@ export default function Home() {
           </div>
         </div>
       </Section>
-
-      {/* <Section id=''>
-        <div className='container py-5'>
-          <div className='row'>
-            <div className='col'>
-              <div className='card text-center'>
-                <div className='card-body'>
-                  <div className='mb-4'>
-                    <i className='las la-oil-can icon-medium'></i>
-                  </div>
-                  <h4 className='mb-5'>jsdhf sjdhf</h4>
-                  <p className=''>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam a ligula at augue pulvinar fermentum.
-                    Nulla id tincidunt ligula.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <div className='card text-center'>
-                <div className='card-body'>
-                  <div className='mb-4'>
-                    <i className='las la-tachometer-alt icon-medium'></i>
-                  </div>
-                  <h4 className='mb-5'>jsdhf sjdhf</h4>
-                  <p className=''>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam a ligula at augue pulvinar fermentum.
-                    Nulla id tincidunt ligula.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <div className='card text-center bg-red'>
-                <div className='card-body'>
-                  <div className='mb-4'>
-                    <i className='las la-save icon-medium'></i>
-                  </div>
-                  <h4 className='mb-5'>jsdhf sjdhf</h4>
-                  <p className=''>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam a ligula at augue pulvinar fermentum.
-                    Nulla id tincidunt ligula.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='col'>
-              <div className='card text-center bg-red'>
-                <div className='card-body'>
-                  <div className='mb-4'>
-                    <i className='las la-microchip icon-medium'></i>
-                  </div>
-                  <h4 className='mb-5'>jsdhf sjdhf</h4>
-                  <p className=''>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam a ligula at augue pulvinar fermentum.
-                    Nulla id tincidunt ligula.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section> */}
 
       <Section id='footer'>
         <footer>
